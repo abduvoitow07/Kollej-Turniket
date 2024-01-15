@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/Logo.png' %}" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: site_title;
+            src: url({% static 'fonts/Ancherr-Regular-PersonalUse.otf' %});
+        }
+        #site_title{
+            font-family: site_title;
+        }
+        @font-face {
+            font-family: site_body;
+            src: url({% static 'fonts/RomanAntique.ttf' %});
+        }
+        #site_body{
+            font-family: site_body;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'details/navbar.html' %}
+    <div class="max-w-5xl mx-auto">
+        
+        {% block content %}
+
+        {% endblock %}
+     
+    </div>
+</body>
+</html>

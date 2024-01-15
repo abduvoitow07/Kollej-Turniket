@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}SHEK{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="{% static 'images/scanner.png' %}">
+    <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+      <h1 class="title-font sm:text-5xl text-3xl mb-2 font-medium text-gray-700" id="site_title">SCANNER SYSTEM</h1>
+      <p class="mb-2 leading-relaxed" id="site_body">Ushbu maxsus platforma shtrix-kodni skaner qilish orqali shaxsni tasdiqlash va ma'lumotlarini ko'rish imkoniyatini beradi!
+         <!-- Ushbu dastur Abduvoitov Doniyor tomonidan yaratilgan -->
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
